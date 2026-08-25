@@ -31,6 +31,9 @@
    - VS Code terminal showing Git Bash is selected
 
 **Submission:** Written answers + Screenshots
+*Answer*
+<img width="757" height="226" alt="image" src="https://github.com/user-attachments/assets/56c47f5f-d462-426d-ba66-69f3b0fd7c34" />
+
 
 ---
 
