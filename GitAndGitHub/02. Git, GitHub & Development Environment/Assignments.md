@@ -81,6 +81,10 @@ Tasks:
 Submission: Screenshots + written answers
 
 *Answer*
+<img width="1917" height="907" alt="image" src="https://github.com/user-attachments/assets/13191d8c-caec-44b1-888f-731b59202834" />
+
+<img width="1917" height="908" alt="image" src="https://github.com/user-attachments/assets/2ce698dc-de1f-421e-8d8b-665b43ac9f8b" />
+
 <img width="1200" height="1600" alt="WhatsApp Image 2026-08-23 at 10 19 06 PM" src="https://github.com/user-attachments/assets/eda4c57d-be05-4c21-a6c7-bccf3d35ffbe" />
 
 ---
