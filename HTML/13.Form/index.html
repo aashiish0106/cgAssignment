@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms Assignment</title>
+</head>
+<body>
+
+  <form action="/submit.php" method="post" autocomplete="on">
+    <label for="basicUsername">Username:</label>
+    <input type="text" id="basicUsername" name="username">
+    <input type="submit" value="Submit">
+  </form>
+
+  <hr>
+
+  <form action="/search.php" method="get">
+    <label for="siteSearch">Search:</label>
+    <input type="search" id="siteSearch" name="q" placeholder="Enter keywords...">
+    <input type="submit" value="Search">
+  </form>
+
+  <hr>
+
+  <form action="/process.php" method="post" novalidate>
+    <label for="novalidateEmail">Email (Required, but validation skipped):</label>
+    <input type="email" id="novalidateEmail" name="email" required>
+    <input type="submit" value="Submit without Validation">
+  </form>
+
+  <hr>
+
+  <form action="/submit-urlencoded.php" method="post" enctype="application/x-www-form-urlencoded">
+    <label for="urlEncUser">Full Name:</label>
+    <input type="text" id="urlEncUser" name="fullname">
+    <label for="urlEncEmail">Email:</label>
+    <input type="email" id="urlEncEmail" name="email">
+    <input type="submit" value="Send Encoded">
+  </form>
+
+  <hr>
+
+  <form action="/upload.php" method="post" enctype="multipart/form-data">
+    <label for="fileDocument">Select Document:</label>
+    <input type="file" id="fileDocument" name="uploadedFile">
+    <input type="submit" value="Upload File">
+  </form>
+
+  <hr>
+
+  <form action="/submit-plain.php" method="post" enctype="text/plain">
+    <label for="plainUser">Username:</label>
+    <input type="text" id="plainUser" name="username">
+    <label for="plainNote">Note:</label>
+    <input type="text" id="plainNote" name="note">
+    <input type="submit" value="Send Plain Text">
+  </form>
+
+  <hr>
+
+  <form action="/external.php" method="post" name="userForm" target="_blank">
+    <label for="targetInput">User ID:</label>
+    <input type="text" id="targetInput" name="userId">
+    <input type="submit" value="Open in New Tab">
+  </form>
+
+  <hr>
+
+  <form action="/account.php" method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="userEmail">
+  </form>
+
+  <hr>
+
+  <form action="/profile.php" method="post">
+    <p>Select Gender:</p>
+    <input type="radio" id="genderMale" name="gender" value="male" checked>
+    <label for="genderMale">Male</label>
+    <input type="radio" id="genderFemale" name="gender" value="female">
+    <label for="genderFemale">Female</label>
+    <input type="radio" id="genderOther" name="gender" value="other">
+    <label for="genderOther">Other</label>
+  </form>
+
+  <hr>
+
+  <form action="/interests.php" method="post">
+    <p>Select Hobbies:</p>
+    <input type="checkbox" id="hobbyCoding" name="hobbies" value="coding" checked>
+    <label for="hobbyCoding">Coding</label>
+    <input type="checkbox" id="hobbyMusic" name="hobbies" value="music">
+    <label for="hobbyMusic">Music</label>
+    <input type="checkbox" id="hobbyReading" name="hobbies" value="reading">
+    <label for="hobbyReading">Reading</label>
+  </form>
+
+  <hr>
+
+  <form action="/cars.php" method="post">
+    <label for="carSelect">Choose a Car:</label>
+    <select id="carSelect" name="cars">
+      <option value="toyota">Toyota</option>
+      <option value="honda">Honda</option>
+      <option value="ford">Ford</option>
+    </select>
+  </form>
+
+  <hr>
+
+  <form action="/skills.php" method="post">
+    <label for="multiSkills">Choose Multiple Skills:</label>
+    <select id="multiSkills" name="skills" multiple size="3">
+      <option value="html">HTML5</option>
+      <option value="css">CSS3</option>
+      <option value="js">JavaScript</option>
+      <option value="py">Python</option>
+    </select>
+  </form>
+
+  <hr>
+
+  <form action="/produce.php" method="post">
+    <label for="fruitSelect">Select a Fruit:</label>
+    <select id="fruitSelect" name="fruits">
+      <optgroup label="Citrus">
+        <option value="orange">Orange</option>
+        <option value="lemon">Lemon</option>
+      </optgroup>
+      <optgroup label="Berries">
+        <option value="strawberry">Strawberry</option>
+        <option value="blueberry">Blueberry</option>
+      </optgroup>
+    </select>
+  </form>
+
+  <hr>
+
+  <form action="/feedback.php" method="post">
+    <label for="userComments">User Comments:</label>
+    <textarea id="userComments" name="comments" rows="4" cols="50" placeholder="Type your message here..."></textarea>
+  </form>
+
+  <hr>
+
+  <form action="/actions.php" method="post">
+    <button type="submit">Submit Form</button>
+    <button type="reset">Reset Form</button>
+    <button type="button" onclick="alert('Button clicked!')">Regular Action</button>
+  </form>
+
+  <hr>
+
+  <form action="/personal.php" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="fName">First Name:</label>
+      <input type="text" id="fName" name="firstName">
+      <label for="lName">Last Name:</label>
+      <input type="text" id="lName" name="lastName">
+    </fieldset>
+  </form>
+
+  <hr>
+
+  <form action="/account-lock.php" method="post">
+    <fieldset disabled>
+      <legend>Account Security</legend>
+      <label for="lockUser">Username:</label>
+      <input type="text" id="lockUser" name="lockedUsername">
+      <label for="lockPass">Password:</label>
+      <input type="password" id="lockPass" name="lockedPassword">
+    </fieldset>
+  </form>
+
+  <hr>
+
+  <form action="/browser.php" method="post">
+    <label for="browserChoice">Preferred Browser:</label>
+    <input list="browsers" id="browserChoice" name="browser">
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Safari">
+      <option value="Edge">
+    </datalist>
+  </form>
+
+  <hr>
+
+  <form action="/auth.php" method="post">
+    <label for="securePassword">Password (Minimum 8 characters):</label>
+    <input type="password" id="securePassword" name="password" minlength="8" required>
+  </form>
+
+  <hr>
+
+  <form action="/invite.php" method="post">
+    <label for="multiEmail">Recipients:</label>
+    <input type="email" id="multiEmail" name="recipients" multiple placeholder="user1@example.com, user2@example.com">
+  </form>
+
+  <hr>
+
+  <form action="/schedule.php" method="post">
+    <label for="date2023">Select Date (2023 only):</label>
+    <input type="date" id="date2023" name="eventDate" min="2023-01-01" max="2023-12-31">
+  </form>
+
+  <hr>
+
+  <form action="/order.php" method="post">
+    <label for="itemQty">Quantity (1 to 10):</label>
+    <input type="number" id="itemQty" name="quantity" min="1" max="10" step="1">
+  </form>
+
+  <hr>
+
+  <form action="/audio.php" method="post">
+    <label for="volumeLevel">Volume Level:</label>
+    <input type="range" id="volumeLevel" name="volume" min="0" max="100" value="50">
+  </form>
+
+  <hr>
+
+  <form action="/documents.php" method="post" enctype="multipart/form-data">
+    <label for="resumeDoc">Upload CV/Resume (.pdf, .docx):</label>
+    <input type="file" id="resumeDoc" name="resumeFile" accept=".pdf,.docx" required>
+  </form>
+
+  <hr>
+
+  <form action="/session.php" method="post">
+    <input type="hidden" name="session_token" value="abc123tokenXYZ">
+    <input type="submit" value="Execute Action">
+  </form>
+
+  <hr>
+
+  <form action="/theme.php" method="post">
+    <label for="favColor">Select Theme Color:</label>
+    <input type="color" id="favColor" name="favoriteColor" value="#ff0000">
+  </form>
+
+  <hr>
+
+  <form action="/contact-tel.php" method="post">
+    <label for="telInput">Phone Number:</label>
+    <input type="tel" id="telInput" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+  </form>
+
+  <hr>
+
+  <form action="/website.php" method="post">
+    <label for="webUrl">Portfolio Website:</label>
+    <input type="url" id="webUrl" name="portfolio" placeholder="https://example.com" required>
+  </form>
+
+  <hr>
+
+  <form action="/query.php" method="get">
+    <label for="autoSearch">Search Terms:</label>
+    <input type="search" id="autoSearch" name="q" placeholder="Start typing..." autofocus>
+  </form>
+
+  <hr>
+
+  <form id="externalLinkedForm" action="/external-process.php" method="post">
+    <label for="internalInput">Name:</label>
+    <input type="text" id="internalInput" name="userName">
+    <input type="submit" value="Submit Linked Data">
+  </form>
+  <label for="outsideInput">Email (Outside Form):</label>
+  <input type="email" id="outsideInput" name="userEmail" form="externalLinkedForm">
+
+  <hr>
+
+  <form action="/save.php" method="post">
+    <label for="actionUser">Username:</label>
+    <input type="text" id="actionUser" name="username">
+    <button type="submit">Save (Default Action)</button>
+    <button type="submit" formaction="/delete.php">Delete (Override Action)</button>
+  </form>
+
+  <hr>
+
+  <form action="/data-handler.php" method="post">
+    <label for="methodUser">Query Term:</label>
+    <input type="text" id="methodUser" name="term">
+    <button type="submit">Save Data (POST)</button>
+    <button type="submit" formmethod="get">Search Data (GET)</button>
+  </form>
+
+  <hr>
+
+  <form action="/register-draft.php" method="post">
+    <label for="reqEmail">Required Email:</label>
+    <input type="email" id="reqEmail" name="email" required>
+    <button type="submit">Submit (Validated)</button>
+    <button type="submit" formnovalidate>Save as Draft (Skip Validation)</button>
+  </form>
+
+  <hr>
+
+  <form action="/preview-post.php" method="post">
+    <label for="docTitle">Article Title:</label>
+    <input type="text" id="docTitle" name="title">
+    <button type="submit">Save in Current Tab</button>
+    <button type="submit" formtarget="_blank">Preview in New Tab</button>
+  </form>
+
+  <hr>
+
+  <form action="/login.php" method="post">
+    <label for="loginName">Username:</label>
+    <input type="text" id="loginName" name="username" required>
+    
+    <label for="loginPass">Password:</label>
+    <input type="password" id="loginPass" name="password" minlength="8" required>
+    
+    <input type="submit" value="Login">
+  </form>
+
+  <hr>
+
+  <form action="/register.php" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="regName">Full Name:</label>
+      <input type="text" id="regName" name="fullName" required>
+      
+      <label for="regEmail">Email Address:</label>
+      <input type="email" id="regEmail" name="email" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Preferences</legend>
+      <input type="checkbox" id="regNewsletter" name="newsletter" value="subscribe">
+      <label for="regNewsletter">Subscribe to weekly newsletter</label>
+    </fieldset>
+
+    <input type="submit" value="Register Account">
+  </form>
+
+  <hr>
+
+  <form action="/contact.php" method="post">
+    <label for="contactName">Your Name:</label>
+    <input type="text" id="contactName" name="senderName" required>
+
+    <label for="contactEmail">Your Email:</label>
+    <input type="email" id="contactEmail" name="senderEmail" required>
+
+    <label for="contactMsg">Message:</label>
+    <textarea id="contactMsg" name="message" rows="5" cols="40" required></textarea>
+
+    <input type="submit" value="Send Message">
+  </form>
+
+  <hr>
+
+  <form action="/survey.php" method="post">
+    <label for="satisfactionScore">How satisfied are you? (1 to 10):</label>
+    <input type="range" id="satisfactionScore" name="satisfaction" min="1" max="10" value="5">
+
+    <p>Would you recommend us?</p>
+    <input type="radio" id="recYes" name="recommend" value="yes" checked>
+    <label for="recYes">Yes</label>
+    <input type="radio" id="recNo" name="recommend" value="no">
+    <label for="recNo">No</label>
+
+    <br><br>
+    <label for="feedbackComments">Additional Feedback:</label>
+    <textarea id="feedbackComments" name="comments" rows="3" cols="30"></textarea>
+
+    <br>
+    <input type="submit" value="Submit Feedback">
+  </form>
+
+  <hr>
+
+  <form action="/upload-documents.php" method="post" enctype="multipart/form-data">
+    <label for="applicantResume">Resume (.pdf, .docx):</label>
+    <input type="file" id="applicantResume" name="resume" accept=".pdf,.docx" required>
+
+    <label for="applicantPhoto">Profile Photo (Images only):</label>
+    <input type="file" id="applicantPhoto" name="photo" accept="image/*">
+
+    <input type="submit" value="Upload Documents">
+  </form>
+
+  <hr>
+
+  <form action="/search.php" method="get">
+    <label for="mainSiteSearch">Search:</label>
+    <input type="search" id="mainSiteSearch" name="q" placeholder="Enter search keywords..." autofocus>
+    <input type="submit" value="Search Now">
+  </form>
+
+  <hr>
+
+  <form action="/apply.php" method="post" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Personal Details</legend>
+      <label for="jobName">Full Name:</label>
+      <input type="text" id="jobName" name="fullname" required>
+
+      <label for="jobEmail">Email:</label>
+      <input type="email" id="jobEmail" name="email" required>
+
+      <label for="jobPhone">Phone Number:</label>
+      <input type="tel" id="jobPhone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>Professional Experience</legend>
+      <label for="jobExperience">Work Summary:</label>
+      <textarea id="jobExperience" name="experience" rows="4" cols="40"></textarea>
+    </fieldset>
+
+    <p>Employment Type:</p>
+    <input type="radio" id="empFull" name="employmentType" value="full-time" checked>
+    <label for="empFull">Full-time</label>
+    <input type="radio" id="empPart" name="employmentType" value="part-time">
+    <label for="empPart">Part-time</label>
+    <input type="radio" id="empRemote" name="employmentType" value="remote">
+    <label for="empRemote">Remote</label>
+
+    <br><br>
+    <label for="jobResume">Upload Resume (PDF only):</label>
+    <input type="file" id="jobResume" name="resume" accept=".pdf" required>
+
+    <br><br>
+    <input type="checkbox" id="jobTerms" name="terms" value="accepted" required>
+    <label for="jobTerms">I accept the terms and conditions</label>
+
+    <br><br>
+    <button type="submit">Submit Application</button>
+    <button type="submit" formnovalidate>Save Draft</button>
+  </form>
+
+  <hr>
+
+  <form action="/default-endpoint.php" method="post" target="_self">
+    <label for="overrideUser">Required Username:</label>
+    <input type="text" id="overrideUser" name="username" required>
+
+    <label for="overrideEmail">Required Email:</label>
+    <input type="email" id="overrideEmail" name="email" required>
+
+    <br><br>
+    <button type="submit">Standard Submit</button>
+    <button type="submit" formaction="/custom-endpoint.php">Override Action</button>
+    <button type="submit" formmethod="get">Override Method (GET)</button>
+    <button type="submit" formnovalidate>Override Validation (Skip)</button>
+    <button type="submit" formtarget="_blank">Override Target (New Tab)</button>
+  </form>
+
+</body>
+</html>
