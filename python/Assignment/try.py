@@ -1,6 +1,5 @@
-# 9731
-chr(9731)
-# 9829
-chr(9829)
-# 8377
-chr(8377)
+text = "BTECH-CSE-2026"
+
+print(text[0:5])
+print(text[6:9])
+print(text[10:14])
