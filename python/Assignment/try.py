@@ -1,5 +1,7 @@
-text = "BTECH-CSE-2026"
+# Q63. Sentence Information
 
-print(text[0:5])
-print(text[6:9])
-print(text[10:14])
+sentence = "Python is very powerful"
+first, second, third, last = sentence.split()
+print(f"First word: {first}")
+print(f"Last word: {last}")
+print(len(sentence.split()))
