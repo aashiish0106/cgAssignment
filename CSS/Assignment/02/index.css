@@ -1,0 +1,226 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+
+}
+
+.sideBar {
+    border: 2px solid black;
+    height: 100vh;
+    width: 15vw;
+    background-color: #212121;
+}
+
+.main {
+    border: 2px solid black;
+    height: 100vh;
+    width: 85vw;
+
+}
+
+.sideBar {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo {
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.side2 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 100%;
+    height: auto;
+
+}
+
+.side3 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 100%;
+    height: auto;
+
+}
+
+.mainRight {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    border: 2px solid black;
+    justify-content: center;
+
+
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+
+main {
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px 200px;
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.search {
+    border: 2px solid black;
+    width: 100%;
+    height: 30px;
+
+}
+
+.scoll {
+    border: 2px solid black;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    gap: 8px;
+
+
+}
+
+.scoll button {
+    flex-shrink: 0;
+    /* chips keep their size */
+    white-space: nowrap;
+    /* "User Interface Design" stays on one line */
+}
+
+.scoll::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Edge */
+}
+
+
+main>div {
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img {
+    height: 60%;
+    border: 2px solid black;
+}
+
+.detail {
+    border: 2px solid black;
+    display: flex;
+    height: 40%;
+}
+
+.channellogo {
+    border: 2px solid black;
+    width: 15%;
+}
+
+.videoDetail {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.title {
+    border: 2px solid black;
+    height: 50%;
+
+}
+
+.channelDetail {
+    border: 2px solid black;
+    height: 50%;
+
+}
+
+.hambarger {
+    height: 40px;
+}
+
+.Youtube img {
+    height: 25px;
+}
+
+.side2>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+
+}
+
+.side2>div div {
+    color: white;
+}
+
+
+.side3>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+
+}
+
+.side3>div div {
+    color: white;
+}
+
+.side4 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+.side4>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+
+}
+
+.side4>div div {
+    color: white;
+}
+
+.side4Heading {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-size: 10px;
+}
